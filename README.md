@@ -15,5 +15,5 @@ Repository for mobility team B's CUAI summer conference arxiv
 ```
 $ conda create -n cuai python=3.8
 $ conda activate cuai
-$ pip install requirements.txt
+$ pip install -r requirements.txt
 ```
