@@ -1,7 +1,6 @@
 # Awesome-Youtube-Thumbnail-Generator
 Repository for mobility team B's CUAI summer conference arxiv
 
-*THis repository is WY-C's repository.
 
 ### [Schedule]
 - 썸네일 배경 이미지 추천 시스템 **(Due : ~7/17)**
