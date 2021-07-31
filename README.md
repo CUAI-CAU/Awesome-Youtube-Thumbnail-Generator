@@ -24,3 +24,4 @@ $ pip install -r requirements.txt
 - 나혁 : 자막 STT 코드 정리 + Docs 작성
 
 다음 회의 날짜 : 8월 7일(토) Offline ~ 코로나 조심 ㅠㅅ
+2차 발표자 지호형^~^
