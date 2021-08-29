@@ -1,12 +1,20 @@
 # Awesome-Youtube-Thumbnail-Generator
-Repository for mobility team B's CUAI summer conference arxiv
 
-![img](./img.png)
-### [Schedule]
-- 썸네일 배경 이미지 추천 시스템 **(Due : ~7/17)**
-  - **Target** : 유퀴즈 Youtube Clip ([Youtube Link](https://www.youtube.com/watch?v=FlmIK9KNb9g&ab_channel=tvNDENT))
-  - **Keywords** : Human Segmentation, Masking etc.
-  - **Packages** : PyTorch, Pre-trained Segmentation Model, OpenCV etc.
+[Paper]() | [Project]() | [Presentation]()
+
+**This repository contains source codes which used for "Final Project for CUAI 4th Summer Conference".**
+
+Paper and Presentation are in Korean.  
+
+### Our Team 
+ - Nahyuk Lee (School of Computer Science & Engineering, Chung-Ang Univ.)
+ - Hyejin Jang (School of Integrative Engineering, Chung-Ang Univ.)
+ - Wonyoung Choi (School of Computer Science & Engineering, Chung-Ang Univ.)
+ - Jiho Hong (School of Mechanical Engineering, Chung-Ang Univ.)
+
+## Application
+
+![ex1](docs/result2.jpg)
 
 ### Requirements
 
