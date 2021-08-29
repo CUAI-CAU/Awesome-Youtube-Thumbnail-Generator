@@ -1,6 +1,7 @@
-torch
-pillow
-numpy
 opencv-contrib-python
-matplotlib
+numpy
+pandas
+torch
+Pillow
 torchvision
+matplotlib
