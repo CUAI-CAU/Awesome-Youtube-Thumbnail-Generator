@@ -25,13 +25,20 @@ Original youtube clip is in [here](https://www.youtube.com/watch?v=kQJ1pnVIwss&a
 ## Pipeline
 ![pipeline](docs/pipeline.png)
 
-### Requirements
+## Code
 
+### Install dependencies
+We recommend you to use Anaconda that already including mandotory packages.
+```
+conda create -n youthumb python=3.8
+conda activate youthumb
+python -m pip install -r requirements.txt
+```
+Our code was tested with Python 3.8, Pytorch 1.9.0, CUDA 11.1
 
-#### Create Virtual Environments & Install Library
+### Generating Thumbnails
+Before you generating thumbnails, save your video under "input", and run the command. Generated thumbnail will be stored in "output" directory.
 ```
-$ conda create -n youthumb python=3.8
-$ conda activate youthumb
-$ pip install -r requirements.txt
+python main.py <your_video_name.mp4>
 ```
----
+
