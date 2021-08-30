@@ -13,7 +13,7 @@ Paper and Presentation are in Korean.
 ### Our Team 
  - **Nahyuk Lee**[@](mailto:nahyuk0113@gmail.com) (School of Computer Science & Engineering :desktop_computer:, Chung-Ang Univ.)
  - **Hyejin Jang**[@](mailto:wkdgpwls617@gmail.com) (School of Integrative Engineering 	:test_tube:, Chung-Ang Univ.)
- - **Wonyoung Choi**[@](mailto:) (School of Computer Science & Engineering :desktop_computer:, Chung-Ang Univ.)
+ - **Wonyoung Choi**[@](mailto:choioy6532@naver.com) (School of Computer Science & Engineering :desktop_computer:, Chung-Ang Univ.)
  - **Jiho Hong**[@](mailto:hgjiho@naver.com) (School of Mechanical Engineering 	:hammer_and_wrench:, Chung-Ang Univ.)
 
 ## Application
