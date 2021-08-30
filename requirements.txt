@@ -5,3 +5,6 @@ torch
 Pillow
 torchvision
 matplotlib
+cmake
+dlib
+face-recognition

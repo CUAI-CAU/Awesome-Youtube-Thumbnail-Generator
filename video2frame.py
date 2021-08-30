@@ -23,13 +23,3 @@ def video2frame(video_path):
             count += 1
 
     vidcap.release()
-
-# Command 내 인자 개수 확인
-if len(sys.argv) != 2:
-    print("Insufficient arguments")
-    sys.exit()
-
-# input File 열기
-file_path = sys.argv[1]
-
-video2frame(file_path)

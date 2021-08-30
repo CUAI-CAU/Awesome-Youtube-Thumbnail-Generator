@@ -6,11 +6,26 @@ import numpy as np
 from torchvision import transforms as T
 import matplotlib.pyplot as plt
 import torch
+import human_segmentation
+import sys
+
+# Command 내 인자 개수 확인
+if len(sys.argv) != 2:
+    print("Insufficient arguments")
+    sys.exit()
 
 device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
 model = torchvision.models.detection.maskrcnn_resnet50_fpn(pretrained=True)
 model = model.to(device)
 model.eval()
+
+# input File 열기
+file_path = sys.argv[1]
+
+recommend_people = human_segmentation.recommend(file_path)
+print("#####################")
+print("Recommend people:", recommend_people)
+
 
 COCO_INSTANCE_CATEGORY_NAMES = [
     '__background__', 'person', 'bicycle', 'car', 'motorcycle', 'airplane', 'bus',
@@ -110,11 +125,13 @@ def Auto_Resizer(target, background) :
 mask_list = []
 box_list = []
 
-img = cv2.imread('./input/query2/frame29.png')
-img = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
-_, masks = instance_segmentation('./input/query2/frame29.png')
+frame_num = final_recommend(file_path)
 
-background = Auto_Resizer(img, cv2.imread('./background/background1.png'))
+img = cv2.imread('./input/query2/frame%d.png'%frame_num)
+img = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
+_, masks = instance_segmentation('./input/query2/frame%d.png'%frame_num)
+
+background = Auto_Resizer(img, cv2.imread('./background/background4.png'))
 background = cv2.cvtColor(background, cv2.COLOR_BGR2RGB)
 
 

@@ -83,24 +83,16 @@ def instance_segmentation(img_path, threshold=0.5, rect_th=3,
             box_list.append(boxes[i])
     return img, pred_cls, masks[i]
 
-def main():
+def recommend(file_path):
     global mask_list, box_list, device, model, COCO_INSTANCE_CATEGORY_NAMES
-    
-    # Command 내 인자 개수 확인
-    if len(sys.argv) != 2:
-        print("Insufficient arguments")
-        sys.exit()
 
-    # input File 열기
-    file_path = sys.argv[1]
-
-    video2frame('./input/'+file_path)
+    video2frame(file_path)
 
     #frame number 바꿔가면서 오류 발생하는지 아닌지 판별
     mask_list = []
     box_list = []
 
-    file_path = './input/' + os.path.splitext(file_path)[0]+'/'
+    file_path = os.path.splitext(file_path)[0]+'/'
     file_list = os.listdir(file_path)
     #print(file_list)
 
@@ -149,8 +141,6 @@ def main():
         sum = sum + number_of_people[i]
     recommend_people = math.ceil(sum / len(file_list))
 
-    print(recommend_people)
+    #print(recommend_people)
 
     return recommend_people
-
-main()
